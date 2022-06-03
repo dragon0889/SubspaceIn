@@ -59,7 +59,7 @@ LimitNOFILE=65535
 WantedBy=multi-user.target" > $HOME/subspaced-farmer.service
 
 
-mv $HOME/subspaced* /etc/systemd/system/
+sudo mv $HOME/subspaced* /etc/systemd/system/
 sudo systemctl restart systemd-journald
 sudo systemctl daemon-reload
 sudo systemctl enable subspaced subspaced-farmer
