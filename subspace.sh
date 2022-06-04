@@ -32,9 +32,7 @@ sleep 1
 echo "[Unit]
 Description=Subspace Node
 After=network.target
---in-peers 10 \
-  --out-peers 10 \
-  --max-parallel-downloads 10 \
+
 [Service]
 User=$USER
 Type=simple
